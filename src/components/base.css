@@ -1,0 +1,263 @@
+.container{
+  padding: 0 30px;
+}
+.radiu-box{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #373A41;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+/* 边框 */
+.border{
+  border-width: 1px;
+  border-style: solid;
+  border-color: #4C5059;
+}
+.submit-btn{
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #4C5059;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  margin: 40px 0;
+  background-color: #01FFEA;
+}
+.btn-40{
+  height: 80px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #4C5059;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  text-align: center;
+  line-height: 60px;
+}
+/* 文字对齐 */
+.font-center{
+  text-align: center;
+}
+/* 文字颜色 */
+.font-green{
+  color: #64FF68;
+}
+.font-red{
+  color: #FF4A80;
+}
+.font-orange{
+  color: #FDE24B;
+}
+.font-white{
+  color: #FFF;
+}
+.font-black{
+  color: #373A41;
+}
+.font-light-green{
+  color: #01FFEA;
+}
+/* 文字大小 */
+.font-11{
+  font-size: 22px;
+}
+.font-14{
+  font-size: 28px;
+}
+.font-15{
+  font-size: 30px;
+}
+.font-16{
+  font-size: 32px;
+}
+.font-18{
+  font-size: 36px;
+}
+.font-24{
+  font-size: 48px;
+}
+/* 文字加粗 */
+.font-bold{
+  font-weight: bold;
+}
+/* 背景颜色 */
+.bg-gray{
+  background-color:#4C5059;
+}
+.bg-black{
+  background-color:#303238
+}
+.bg-light-black{
+  background-color: #373A41;
+}
+.bg-blue{
+  background-color: #3180FF;
+}
+.bg-light-green{
+  background-color: #01FFEA;
+}
+/* 边距 */
+.m-0{
+  margin:0;
+}
+.mt-10{
+  margin-top: 20px;
+}
+.mt-15{
+  margin-top: 30px;
+}
+
+.mb-10{
+  margin-bottom: 20px;
+}
+.mb-15{
+  margin-bottom: 30px;
+}
+.mb-20{
+  margin-bottom: 40px;
+}
+.mb-25{
+  margin-bottom: 50px;
+}
+
+.mr-5{
+  margin-right: 10px;
+}
+.mr-15{
+  margin-right: 30px;
+}
+.mr-30{
+  margin-right: 60px;
+}
+
+.ml-15{
+  margin-left: 30px;
+}
+.ml-20{
+  margin-left: 40px;
+}
+
+.p-0{
+  padding: 0;
+}
+.pt-40{
+  padding-top: 80px;
+}
+.p-25{
+  padding: 50px;
+}
+.pl-0{
+  padding-left: 0;
+}
+.pl-15{
+  padding-left: 30px;
+}
+.pr-0{
+  padding-right: 0;
+}
+.pr-15{
+  padding-right: 30px;
+}
+
+.w-100{
+  width:750px;
+}
+.flex{
+  flex: 1;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+/* flex子元素对齐方式 */
+/* .flex-items-center{
+  align-items: 
+} */
+.flex-items-start{
+  align-items: flex-start;
+}
+.flex-items-center{
+  align-items: center;
+}
+.flex-items-end{
+  align-items: flex-end;
+}
+.flex-row{
+  display: flex;
+  flex-direction: row;
+}
+.flex-row-between{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.flex-row-around{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.flex-row-end{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.flex-row-center{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.flex-col-between{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.flex-col-around{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.flex-col-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.flex-col-end{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.avatar{
+  width: 80px;
+  height: 80px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  margin-right: 20px;
+}
+.table-row{
+  display: flex;
+  flex-direction: row;
+}
+.table-item{
+  flex: 1;
+  flex-direction: column;
+  padding: 14px 6px;
+  min-height: 100px;
+}
+.col-center{
+  align-items: center;
+}
+.row-center{
+  justify-content: center;
+}
