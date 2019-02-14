@@ -280,9 +280,11 @@
 <script>
 var modal = weex.requireModule('modal')
 var navigator = weex.requireModule('navigator')
+var websocket = weex.requireModule('webSocket')
 
 import HText from '@/common/h-text.vue'
 import echarts from 'echarts'
+import Socket from '@/query/socket.js'
 export default {
   components: {HText},
   data () {
@@ -296,9 +298,8 @@ export default {
     }
   },
   mounted () {
-    // this.$nextTick(function(){
-    //   this.draw('my_charts');
-    // })
+    // Socket()
+    websocket.WebSocket('ws://echo.websocket.org','');
   },
   methods: {
     jumpShowCase (event) {

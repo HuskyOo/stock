@@ -9,12 +9,18 @@
 </template>
 
 <script>
+import { Socket } from '@/query/index.js'
+var websocket = weex.requireModule('webSocket')
 export default {
   name: 'App',
   data () {
     return {
       logo: 'https://gw.alicdn.com/tfs/TB1yopEdgoQMeJjy1XaXXcSsFXa-640-302.png'
     }
+  },
+  mounted () {
+    // Socket()
+    // websocket.WebSocket('ws://echo.websocket.org','');
   }
 }
 </script>

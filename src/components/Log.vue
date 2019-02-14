@@ -2,8 +2,8 @@
   <div class="log">
     <my-head title="登录"></my-head>
     <div class="pr-15 pl-15">
-      <my-input title="手机号:" type="tel" v-model="tel"></my-input>
-      <my-input title="密码:" type="password" v-model="pwd"></my-input>
+      <my-input title="手机号:" type="tel" v-model="mobile"></my-input>
+      <my-input title="密码:" type="password" v-model="password"></my-input>
       <div class="submit-btn" @click="handleSubmit">
         <h-text class="font-black font-bold font-15" >登录</h-text>
       </div>
@@ -15,23 +15,27 @@
 </template>
 
 <script>
+const modal = weex.requireModule('modal')
+
 import HText from '@/common/h-text.vue'
 import MyInput from '@/common/h-input.vue'
 import MyHead from '@/common/navigationbar.vue'
 
-const modal = weex.requireModule('modal');
+import { mobileReg, passwordReg, Log } from '@/query/index.js'
 export default {
   components:{ HText, MyHead, MyInput },
   data () {
     return {
-      tel: '',
-      pwd: ''
+      mobile: '',
+      password: ''
     }
   },
   methods: {
     handleSubmit () {
       // console.log(this.tel)
-      modal.toast({'message': this.tel})
+      if(mobileReg(this.mobile) && passwordReg(this.password)){
+        Log({mobile: this.mobile, password: this.password})
+      }
     }
   }
 }
